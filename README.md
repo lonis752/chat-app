@@ -1,16 +1,15 @@
 # Fullstack Chat App
 
 This application was built using the MERN stack.<br/>
-You can create an account to chat with other users in realtime with text messages and image sharing, also you have the ability to update your profile photo and customize your UI theme as needed.
+You can create an account with authentication implemented using bcrypt and JWT. Chat with other users in realtime with text messages and image sharing provided by mongoDB, Cloudinary, and realtime functionality with Socket.io. You also have the ability to update your profile photo and customize your UI theme as needed provided by DaisyUI.
 
 ### packages used:
-Make sure to follow the instructions on the documentation links as some packages require extra steps after downloading the package.<br/>
-<br></br>
+*Make sure to follow the instructions on the documentation links as some packages require extra steps after downloading the package.<br/>
 
 ### Frontend:
-Vite - Frontend dev tool<br/>
+* Vite - Frontend dev tool<br/>
 https://vite.dev/guide/<br/>
-React - Library for creating the frontend<br/>
+* React - Library for creating the frontend<br/>
 https://react.dev/learn<br/>
 React Router Dom - For SPA's / routing for the different pages on your site<br/>
 https://reactrouter.com/home<br/>
@@ -70,7 +69,7 @@ Make sure to delete other README.md files.<br/>
 Update the contents of .gitignore to ignore at least the node_modules and .env*.<br/>
 
 Deployed using Render: https://chat-app-kq6u.onrender.com<br/>
-* Disclaimer: Apps on the free plan with Render (which this app is) will have a longer initial load up time as the apps are put on pause after a set amount of inactivity. This has no effect on the app and it's actual runtime but something to keep in mind.<br/>
+*Disclaimer: Apps on the free plan with Render (which this app is) will have a longer initial load up time as the apps are put on pause after a set amount of inactivity. This has no effect on the app and it's actual runtime but something to keep in mind when visiting the link above.<br/>
 
 Future Updates:<br/>
 - Groupchat functions<br/>

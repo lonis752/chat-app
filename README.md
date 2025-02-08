@@ -3,27 +3,73 @@
 This application was built using the MERN stack.
 
 ### packages used:
-
+Make sure to follow the instructions on the documentation links as some packages require extra steps after downloading the package.<br/>
+<br></br>
 (frontend)<br/>
+<br></br>
 Vite - Frontend dev tool<br/>
+https://vite.dev/guide/<br/>
 React - Library for creating the frontend<br/>
+https://react.dev/learn<br/>
 React Router Dom - For SPA's / routing for different webpages<br/>
+https://reactrouter.com/home<br/>
 React Hot Toast - Display nice notifications<br/>
+https://react-hot-toast.com/docs<br/>
 Tailwind CSS - Ease of styling and responsive web design (version 3.4.17 for DaisyUI)<br/>
-DaisyUI - Tailwind plugin providing a library of code to design your frontend https://daisyui.com/docs/install/<br/>
+https://v3.tailwindcss.com/docs/guides/vite<br/>
+DaisyUI - Tailwind plugin providing a library of code to design your frontend<br/>
+https://daisyui.com/docs/install/<br/>
 Axios - Convinient fetching<br/>
+https://axios-http.com/docs/intro<br/>
 Zustand - Global state management system<br/>
+https://zustand.docs.pmnd.rs/getting-started/introduction
 Lucide React - icons and Loading animations<br/>
+https://lucide.dev/guide/<br/>
 Socket.IO-Client - Allows Socket to communicate with the frontend<br/>
+https://socket.io/docs/v4/client-api/<br/>
+
+Frontend Commands:<br/>
+```
+npm create vite@latest
+npm i react-router-dom react-hot-toast axios zustand lucide-react socket.io-client
+npm i -D tailwindcss@3 postcss autoprefixer daisyui@latest
+npx tailwindcss init -p
+```
 
 (backend)<br/>
-bcryptjs - Salting passwords<br/>
-cloudinary - Image storage for profile pictures and messages<br/>
-cookie-parser - Parser cookies to fetch and use with JWT<br/>
-express - NodeJS express<br/>
-jsonwebtoken - Authenticate users<br/>
-mongoose - database storage using Atlas<br/>
-socket.io - Realtime message functionality<br/>
+<br></br>
+Bcryptjs - Salting passwords<br/>
+https://www.npmjs.com/package/bcryptjs<br/>
+Cloudinary - Image storage for profile pictures and messages<br/>
+https://cloudinary.com/documentation/node_quickstart<br/>
+Cookie-Parser - Parser cookies to fetch and use with JWT<br/>
+https://www.npmjs.com/package/cookie-parser<br/>
+Express - NodeJS express<br/>
+https://expressjs.com/en/starter/installing.html<br/>
+Jsonwebtoken - Authenticate users<br/>
+https://www.npmjs.com/package/jsonwebtoken<br/>
+Mongoose - database storage using Atlas<br/>
+https://mongoosejs.com/docs/<br/>
+Socket.io - Realtime message functionality<br/>
+https://socket.io/docs/v4/server-api/<br/>
 Cors - Allow access from frontend URL<br/>
+https://www.npmjs.com/package/cors<br/>
+
+Backend Commands:
+```
+npm i bcryptjs cloudinary cookie-parser express jsonwebtoken mongoose socket.io cors
+
+In the root directory of your project (chat-app):
+```
+npm init -y
+touch README.md
+touch .gitignore
+```
+Make sure to delete other README.md files.<br/>
+Update the contents of .gitignore to ignore at least the node_modules and .env*.<br/>
 
 Deployed using Render: https://chat-app-kq6u.onrender.com<br/>
+
+Future Updates:<br/>
+- Groupchat functions<br/>
+- Delete your account<br/>

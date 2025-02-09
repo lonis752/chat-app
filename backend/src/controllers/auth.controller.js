@@ -87,6 +87,19 @@ export const logout = (req, res) => {
   }
 };
 
+export const deleteUser = async (req, res) => {
+  const userId = req.params.id;
+  
+  try {
+    const deletedUser = await User.findByIdAndDelete({ _id: userId });
+    res.cookie("jwtToken", "", { maxAge: 0 });
+    res.status(200).json({ message: "Deleted user successfully... Goodybye!" });
+  } catch (error) {
+    console.log("Error in deleteUser controller", error.message);
+    res.status(500).json({ message: "Internal Server Error" });
+  }
+};
+
 export const updateProfile = async (req, res) => {
   try {
     const { profilePic } = req.body;

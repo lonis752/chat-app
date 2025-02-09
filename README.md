@@ -72,6 +72,6 @@ Update the contents of .gitignore to ignore at least the node_modules and .env*.
 ### Deployed using Render: https://chat-app-kq6u.onrender.com<br/>
 *Disclaimer: Apps on the free plan with Render (which this app is) will have a longer initial load up time as the apps are put on pause after a set amount of inactivity. This has no effect on the app and it's actual runtime but something to keep in mind when visiting the link above.<br/>
 
-Future Updates:<br/>
+### Future Updates:<br/>
 - Groupchat functions<br/>
 - Delete your account<br/>

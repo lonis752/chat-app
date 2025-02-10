@@ -10,7 +10,7 @@ router.post("/login", login);
 
 router.post("/logout", logout);
 
-router.delete("/delete/:id", deleteUser);
+router.delete("/delete/:id", protectRoute, deleteUser);
 
 router.put("/update-profile", protectRoute, updateProfile)
 

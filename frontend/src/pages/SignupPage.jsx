@@ -28,8 +28,8 @@ function SignupPage() {
     if (!/\S+@\S+\.\S+/.test(formData.email))
       return toast.error("Invalid email format");
     if (!formData.password) return toast.error("Password is required");
-    if (formData.password.length < 6)
-      return toast.error("Password must be at least 6 characters");
+    if (!/^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/.test(formData.password))
+      return toast.error("Password must contain 8 characters, uppercase, lowercase, and special character");
 
     return true;
   };

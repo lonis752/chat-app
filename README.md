@@ -74,4 +74,3 @@ Update the contents of .gitignore to ignore at least the node_modules and .env*.
 
 ### Future Updates:<br/>
 - Groupchat functions<br/>
-- Delete your account<br/>

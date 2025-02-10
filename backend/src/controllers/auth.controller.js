@@ -1,5 +1,6 @@
 import { generateToken } from "../lib/utils.js";
 import User from "../models/user.model.js";
+import Message from "../models/message.model.js";
 import bcrypt from "bcryptjs";
 import cloudinary from "../lib/cloudinary.js";
 
@@ -89,9 +90,10 @@ export const logout = (req, res) => {
 
 export const deleteUser = async (req, res) => {
   const userId = req.params.id;
-  
+
   try {
     const deletedUser = await User.findByIdAndDelete({ _id: userId });
+    const deletedMessages = await Message.deleteMany({ senderId: userId });
     res.cookie("jwtToken", "", { maxAge: 0 });
     res.status(200).json({ message: "Deleted user successfully... Goodybye!" });
   } catch (error) {

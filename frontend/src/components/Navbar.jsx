@@ -27,7 +27,7 @@ const Navbar = () => {
               <div className="size-9 rounded-lg bg-primary/10 flex items-center justify-center">
                 <img
                   className="w-5 h-5 text-primary"
-                  src="../public/favicon.ico"
+                  src="/favicon.ico"
                 />
               </div>
               <h1 className="text-lg font-bold">CocoaTalk</h1>
